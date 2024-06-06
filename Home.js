@@ -6,7 +6,7 @@ function Home() {
   const [bookData, setBookData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5555/getBooks")
+    fetch("http://localhost:5555/books")
       .then((res) => {         
         return res.json();         
       })
